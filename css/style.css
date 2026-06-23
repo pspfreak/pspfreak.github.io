@@ -257,6 +257,16 @@ h2 {
     font-weight: 600;
 }
 
+.project-card h3 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.project-card h3 a:hover {
+    color: var(--accent);
+}
+
 .project-tags {
     display: flex;
     gap: 8px;
