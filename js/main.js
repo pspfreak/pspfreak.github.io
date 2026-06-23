@@ -14,6 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     var typerEl = document.getElementById('typer');
+    for (var i = phrases.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = phrases[i];
+        phrases[i] = phrases[j];
+        phrases[j] = temp;
+    }
+
     var phraseIndex = 0;
     var charIndex = 0;
     var deleting = false;
